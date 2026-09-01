@@ -31,7 +31,7 @@
 }
 @media (max-width: 900px) {
   .form-layout { grid-template-columns: 1fr; }
-  .form-sidebar { order: -1; position: static; top: auto; }
+  .form-sidebar { display: none; }
 }
 
 /* ---------- Form sections ---------- */
