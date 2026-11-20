@@ -328,3 +328,64 @@
   position: relative;
   z-index: 1;
 }
+
+/* WRO Americas Gold section */
+.wro-gold-section {
+  padding: 72px 0;
+  background: var(--cream);
+}
+.wro-gold-inner {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+.wro-gold-photo {
+  flex: 0 0 340px;
+  max-width: 340px;
+}
+.wro-gold-photo img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border-radius: var(--radius-md);
+  border: 3px solid var(--ink);
+  box-shadow: var(--shadow-pop);
+}
+.wro-gold-copy {
+  flex: 1;
+  min-width: 0;
+}
+.wro-gold-copy h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  margin: 8px 0 16px;
+}
+.wro-gold-copy p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+.wro-gold-names {
+  display: inline-flex;
+  gap: 10px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+.wro-gold-names span {
+  background: var(--yellow);
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 2px solid var(--ink);
+}
+
+@media (max-width: 860px) {
+  .wro-gold-inner { flex-direction: column; }
+  .wro-gold-photo { flex-basis: auto; width: 100%; max-width: 100%; }
+  .wro-gold-photo img { height: 300px; object-position: center 20%; }
+}
